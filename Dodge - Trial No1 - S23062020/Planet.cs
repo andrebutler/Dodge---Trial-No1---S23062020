@@ -19,7 +19,7 @@ namespace Dodge___Trial_No1___S23062020
         public Planet()
         {
             
-
+            //
             x = 10;
             y = 10;
             width = 20;
