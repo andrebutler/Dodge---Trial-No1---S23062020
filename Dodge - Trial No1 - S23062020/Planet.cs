@@ -18,11 +18,7 @@ namespace Dodge___Trial_No1___S23062020
         //Create a constructor (initialises the values of the fields)
         public Planet()
         {
-            // Methods for the Planet class
-            public void DrawPlanet(Graphics g)
-            {
-                g.DrawImage(PlanetImage, PlanetRec);
-            }
+            
 
             x = 10;
             y = 10;
@@ -32,7 +28,12 @@ namespace Dodge___Trial_No1___S23062020
             planetImage = Properties.Resources.planet1;
             planetRec = new Rectangle(x, y, width, height);
         }
+        // Methods for the Planet class
+        public void DrawPlanet(Graphics g)
+        {
 
+            g.DrawImage(planetImage, planetRec);
+        }
 
     }
 }
