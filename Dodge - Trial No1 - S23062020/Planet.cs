@@ -16,11 +16,10 @@ namespace Dodge___Trial_No1___S23062020
         public Rectangle planetRec;//variable for a rectangle to place our image in
         public int score;
         //Create a constructor (initialises the values of the fields)
-        public Planet()
+        public Planet(int spacing)
         {
-            
-            //
-            x = 10;
+            x = spacing;
+
             y = 10;
             width = 20;
             height = 20;
@@ -31,9 +30,21 @@ namespace Dodge___Trial_No1___S23062020
         // Methods for the Planet class
         public void DrawPlanet(Graphics g)
         {
-
+            planetRec = new Rectangle(x, y, width, height);
             g.DrawImage(planetImage, planetRec);
         }
+
+
+        public void MovePlanet()
+        {
+            
+
+            planetRec.Location = new Point(x, y);
+        }
+
+
+
+
 
     }
 }
