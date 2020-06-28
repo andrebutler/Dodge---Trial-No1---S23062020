@@ -17,6 +17,9 @@ namespace Dodge___Trial_No1___S23062020
         Planet[] planet = new Planet[7];
         Random yspeed = new Random();
         Spaceship spaceship = new Spaceship();
+        bool left, right;
+        string move;
+
 
 
 
@@ -53,6 +56,21 @@ namespace Dodge___Trial_No1___S23062020
                 spaceship.DrawSpaceship(g);
             }
 
+
+        }
+
+        private void FrmDodge_KeyDown(object sender, KeyEventArgs e)
+        {
+            if (e.KeyData == Keys.Left) { left = true; }
+            if (e.KeyData == Keys.Right) { right = true; }
+
+        }
+
+        private void FrmDodge_KeyUp(object sender, KeyEventArgs e)
+        {
+
+            if (e.KeyData == Keys.Left) { left = false; }
+            if (e.KeyData == Keys.Right) { right = false; }
 
         }
 
