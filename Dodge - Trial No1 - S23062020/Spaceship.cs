@@ -34,6 +34,27 @@ namespace Dodge___Trial_No1___S23062020
             g.DrawImage(spaceship, spaceRec);
         }
 
+        public void MoveSpaceship(string move)
+        {
+            spaceRec.Location = new Point(x, y);
+
+            if (move == "right")
+            {
+
+                x += 5;
+                spaceRec.Location = new Point(x, y);
+            }
+
+            if (move == "left")
+            {
+
+                x -= 5;
+                spaceRec.Location = new Point(x, y);
+            }
+
+
+        }
+
 
 
     }

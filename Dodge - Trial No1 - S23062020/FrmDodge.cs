@@ -74,6 +74,21 @@ namespace Dodge___Trial_No1___S23062020
 
         }
 
+        private void TmrShip_Tick(object sender, EventArgs e)
+        {
+            if (right) // if right arrow key pressed
+            {
+                move = "right";
+                spaceship.MoveSpaceship(move);
+            }
+            if (left) // if left arrow key pressed
+            {
+                move = "left";
+                spaceship.MoveSpaceship(move);
+            }
+
+        }
+
         private void TmrPlanet_Tick(object sender, EventArgs e)
         {
 
