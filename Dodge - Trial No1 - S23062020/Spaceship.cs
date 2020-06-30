@@ -40,22 +40,52 @@ namespace Dodge___Trial_No1___S23062020
 
             if (move == "right")
             {
+                if (spaceRec.Location.X > 450) // is spaceship within 50 of right side
+                {
 
-                x += 5;
-                spaceRec.Location = new Point(x, y);
+                    x = 450;
+                    spaceRec.Location = new Point(x, y);
+                }
+                else
+                {
+                    x += 5;
+                    spaceRec.Location = new Point(x, y);
+                }
+
             }
+
+
 
             if (move == "left")
             {
+                if (spaceRec.Location.X < 10) // is spaceship within 10 of left side
+                {
 
-                x -= 5;
-                spaceRec.Location = new Point(x, y);
+                    x = 10;
+                    spaceRec.Location = new Point(x, y);
+                }
+                else
+                {
+                    x -= 5;
+                    spaceRec.Location = new Point(x, y);
+                }
+
             }
+
+
+
+
+
+
 
 
         }
 
 
-
     }
-}
+
+
+
+        }
+
+   

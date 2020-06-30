@@ -18,6 +18,7 @@ namespace Dodge___Trial_No1___S23062020
         Random yspeed = new Random();
         Spaceship spaceship = new Spaceship();
         bool left, right;
+        int score, lives;
         string move;
 
 
