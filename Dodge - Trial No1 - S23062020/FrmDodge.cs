@@ -104,7 +104,7 @@ namespace Dodge___Trial_No1___S23062020
             lblScore.Text = score.ToString();
             lives = int.Parse(txtLives.Text);// pass lives entered from textbox to lives variable
             TmrPlanet.Enabled = true;
-            TmrShip.Enabled = true;
+            TmrShip.Enabled = true; //
         }
 
         private void stopToolStripMenuItem_Click(object sender, EventArgs e)
