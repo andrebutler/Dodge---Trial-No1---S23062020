@@ -85,7 +85,7 @@ namespace Dodge___Trial_No1___S23062020
             if (left) // if left arrow key pressed
             {
                 move = "left";
-                spaceship.MoveSpaceship(move);
+                spaceship.MoveSpaceship(move);   //
             }
 
         }
