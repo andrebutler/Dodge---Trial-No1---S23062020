@@ -101,6 +101,8 @@ namespace Dodge___Trial_No1___S23062020
                 if (planet[i].y >= PnlGame.Height)
                 {
                     planet[i].y = 30;
+                    score += 1;//update the score
+                    lblScore.Text = score.ToString();// display score
                 }
 
             }
